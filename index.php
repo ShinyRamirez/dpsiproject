@@ -127,9 +127,11 @@ span.psw {
 </head>
 <body>
 
-<div align=center> <h2>OROBUX LOGIN.</h2>
+<div align=center> <h2>OROBUX LOGIN</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></div>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+	</div>
 
 <div id="id01" class="modal">
   
@@ -170,6 +172,6 @@ window.onclick = function(event) {
     }
 }
 </script>
-	<button style="width:auto;"><a href="/login/cuestionario1.php">Cuestionario 1</a></button>
+	<button onclick="location.href='/login/cuestionario1.php' " style="width:auto;">Cuestionario 1</button><br>
 </body>
 </html>
