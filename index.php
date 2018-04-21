@@ -127,7 +127,7 @@ span.psw {
 </head>
 <body>
 
-<div align=center> <h2>OROBUX LOGIN</h2>
+<div align=center> <h2>OROBUX LOGIN.</h2>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></div>
 
