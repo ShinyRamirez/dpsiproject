@@ -173,6 +173,7 @@ window.onclick = function(event) {
 }
 </script>
 	<button onclick="location.href='/login/cuestionario1.php' " style="width:auto;">Cuestionario 1</button>
-	<button onclick="location.href='/login/cuestionario2.php' " style="width:auto;">Cuestionario 2</button><br>
+	<button onclick="location.href='/login/cuestionario2.php' " style="width:auto;">Cuestionario 2</button>
+	<button onclick="location.href='/login/cuestionario3.php' " style="width:auto;">Cuestionario 3</button><br>
 </body>
 </html>
