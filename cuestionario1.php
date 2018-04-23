@@ -356,7 +356,7 @@ regreso a revisarla</label><br>
   			<input type="radio" name="q52" value="3"> 3
 			<input type="radio" name="q52" value="4"> 4
   			<input type="radio" name="q52" value="5"> 5 <br><br>
-		  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		  
 </form>
 </div>
 </body>
