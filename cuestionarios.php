@@ -15,6 +15,10 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+		body {
+    background-color: #ffe6cc;
+    
+}
 </style>
 <title>Menu De Cuestionarios</title>
 </head>

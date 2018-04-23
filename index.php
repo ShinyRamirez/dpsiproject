@@ -123,9 +123,17 @@ span.psw {
        width: 100%;
     }
 }
+	
+body {
+    background-color: #ffe6cc;
+    
+}
+
 </style>
+	
 </head>
 <body>
+	
 
 <div align=center> <h2>OROBUX LOGIN</h2>
 

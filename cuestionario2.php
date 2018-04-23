@@ -10,7 +10,11 @@
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+			width: 100%;}
+		body {
+    background-color: #ffe6cc;
+    
+}
 	</style>
 <meta charset="UTF-8">
 <title>Cuestionario AM</title>

@@ -12,6 +12,11 @@
     border: none;
     cursor: pointer;
     width: 100%;
+		}
+		body {
+    background-color: #ffe6cc;
+    
+}
 	</style>
 	
 	
