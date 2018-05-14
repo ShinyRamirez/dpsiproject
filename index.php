@@ -2,7 +2,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	  
+	<script src="jquery-3.3.1.min.js" type="text/javascript" > </script>
+	<script> 
+	/*$(document).ready(function(){ $("a").click(function(evento){alert("has pulsado el enlace...");
+	});
+		}); */
+					  
+	</script>
+	
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -136,10 +143,10 @@ body {
 <body>
 	
 
-<div align=center> <h2>OROBUX LOGIN</h2>
+<div align=center> <h2>OROBUX LOGIN</h2><br>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button><br>
-	<button onclick="location.href='/login/cuestionarios.php' " style="width:auto;">Cuestionarios</button> 
+	<button onclick="location.href='/login/cuestionario1.php' " style="width:auto;">Cuestionarios</button> 
 	<br>
 	
 

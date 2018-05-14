@@ -22,7 +22,7 @@
 
 <body>
 	<div align=center>
-	<form action="">
+	<form name="cuestionario4" action="registro.php" method="post">
 		<hr><label>1.- MAS,  2.-MENOS</label><br> <hr>
 		
 		
@@ -1277,6 +1277,7 @@
 
 	
 		<br><br>
+	<input type="submit" value="Guardar" /> 
 
 		</form>
 	</div>
