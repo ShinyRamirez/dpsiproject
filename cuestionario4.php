@@ -12,17 +12,31 @@
     border: none;
     cursor: pointer;
 			width: 100%;}
-		body {
-    background-color: #ffe6cc;
+		body {background-image: url(img/bluetexture.jpg);
+			 background-repeat: no-repeat;
+    background-position:;
+    margin-right: 0px;
+    background-attachment: fixed;
     
 }
+		input[type=submit] {padding:5px 10px; background:#b9dfff; color: #FFFFFF; border:1px solid #eeeeee;
+		 box-shadow: 5px 5px 5px #eee; text-shadow: none;
+    cursor:pointer;
+    -webkit-border-radius: 20px;
+    border-radius: 20px; }
+			
+	input[type=submit]:hover{
+		background: #016ABC;
+		color:#FFFFFF; border: 1px solid #eee; border-radius: 20px; box-shadow: 5px 5px 5px #eee; text-shadow:none;
+		
+	}
 	</style>
 <title>CUESTIONARIO EA</title>
 </head>
 
 <body>
 	<div align=center>
-	<form name="cuestionario4" action="reporte.php" method="post">
+	<form name="cuestionario4" action="registro.php" method="post">
 		<hr><label>1.- MAS,  2.-MENOS</label><br> <hr>
 		
 		

@@ -11,6 +11,44 @@
 	</script>
 	
 <style>
+	input[type=password] {padding:5px; border:2px solid #ccc;
+-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=password]:focus {border-color:#333;}
+	
+	
+	input[type=text] {padding:5px; border:2px solid #ccc; 
+-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=text]:focus {border-color:#333; }
+
+input[type=submit] {padding:5px 10px; background:#b9dfff; color: #FFFFFF; border:1px solid #eeeeee;
+	 box-shadow: 5px 5px 5px #eee; text-shadow: none;
+    cursor:pointer;
+    -webkit-border-radius: 20px;
+    border-radius: 20px; }
+	
+	input[type=submit]:hover{
+		background: #016ABC;
+		color:#FFFFFF; border: 1px solid #eee; border-radius: 20px; box-shadow: 5px 5px 5px #eee; text-shadow:none;
+		
+	}
+	
+	input[type=button] {padding:5px 10px; background:#b9dfff; color: #FFFFFF; border:1px solid #eeeeee;
+	 box-shadow: 5px 5px 5px #eee; text-shadow: none;
+    cursor:pointer;
+    -webkit-border-radius: 20px;
+    border-radius: 20px; }
+	
+	input[type=button]:hover{
+		background: #016ABC;
+		color:#FFFFFF; border: 1px solid #eee; border-radius: 20px; box-shadow: 5px 5px 5px #eee; text-shadow:none;
+		
+	}
+	
+	
 body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Full-width input fields */
@@ -133,7 +171,8 @@ span.psw {
 }
 	
 body {
-    background-color: #ffe6cc;
+    
+	background-image: url(img/gradientglow.jpg);
     
 }
 
@@ -142,11 +181,17 @@ body {
 </head>
 <body>
 	
+<div align="right"> <input type="button" onclick="location.href='/login/registrousr.php' "value="Registrarse" /></div>
+<div align=center> <h2 style="color: turquoise">OROBUX LOGIN</h2><br>
 
-<div align=center> <h2>OROBUX LOGIN</h2><br>
-
-<form name="login" action="cuestionario1.php" method="post">
-	<input type="submit" value="Login" /> 
+<form name="login" action="usuario.php" method="get"> 
+	
+	<label>Nombre de usuario</label><br>
+	<input type="text" style="width:215px; height:25px " name="user"/><br><br>
+	<label>Contraseña</label><br>
+	<input type="password" style="width:215px; height:25px" name="password"/><br>
+	
+	<br><input type="submit" value="Login" /> 
 	
 	<br>
 	
@@ -166,6 +211,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
 </script>
 	
 </body>
