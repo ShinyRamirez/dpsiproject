@@ -40,18 +40,17 @@ include("auth.php");
 		color:#FFFFFF; border: 1px solid #eee; border-radius: 20px; box-shadow: 5px 5px 5px #eee; text-shadow:none;
 		
 	}
-    
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	#main-header {
+	background: #333;
+	color: white;
+	height: 90px;
+ 
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+		}	
 
 	</style>
 	
@@ -60,9 +59,20 @@ include("auth.php");
 </head>
 
 <body>
+	
+	<header id="main-header">
+	<hr>
+		<div align="center">
+		<label>1.- NUNCA,  2.-POCAS VECES,  3.-FRECUENTEMENTE,  4.-MUCHAS VECES,  5.- SIEMPRE.</label><br> 
+			</div>
+			<hr>
+	<p style="color: ghostwhite">Bienvenido <?php echo $_SESSION['username']; ?>!</p>
+	</header>
+	<br><br><br><br><br>
 	<div align=center>
-	  <form name="cuestionario1" action="cuestionario3.php" method="post">
-  		<hr><label>1.- NUNCA,  2.-POCAS VECES,  3.-FRECUENTEMENTE,  4.-MUCHAS VECES,  5.- SIEMPRE.</label><br> <hr>
+	 
+		<form id="contenido" name="cuestionario1" action="menu.php" method="post">
+  		
   		<label> 01. Durante el aprendizaje: generalmente me pregunto periódicamente ¿si estoy alcanzando mis metas?</label>	<br>
 			<input type="radio" name="Aq1" value="1"> 1
   			<input type="radio" name="Aq1" value="2"> 2

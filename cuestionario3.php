@@ -34,14 +34,34 @@ include("auth.php");
 		color:#FFFFFF; border: 1px solid #eee; border-radius: 20px; box-shadow: 5px 5px 5px #eee; text-shadow:none;
 		
 	}
+		#main-header {
+	background: #333;
+	color: white;
+	height: 90px;
+ 
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+		}
 	</style>
 <title>CUESTIONARIO SR</title>
 </head>
 
 <body>
+	<header id="main-header">
+	<hr>
+		<div align="center">
+		<label>Marque la letra que considere representa la actividad que prefiere.</label><br>
+		</div>
+		<hr>
+	<p style="color: ghostwhite">Bienvenido <?php echo $_SESSION['username']; ?>!</p>
+	</header>
+	
 	<div align=center>
-	<form name="cuestionario3" action="cuestionario2.php" method="post">
-		<hr><label>Marque la letra que considere representa la actividad que prefiere.</label><br>
+		<br><br><br><br><br>
+	<form name="cuestionario3" action="menu.php" method="post">
+		
 		<label> Marque solo una letra por pregunta en la columna.</label><br>
 Lo importante es que seas muy sincero contigo mismo en las respuestas</label><br> <hr>
 		<label>1 Me gusta cualquier lugar en que…</label>	

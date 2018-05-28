@@ -34,14 +34,34 @@ include("auth.php");
 		color:#FFFFFF; border: 1px solid #eee; border-radius: 20px; box-shadow: 5px 5px 5px #eee; text-shadow:none;
 		
 	}
+		#main-header {
+	background: #333;
+	color: white;
+	height: 90px;
+ 
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+		}
 	</style>
 <title>CUESTIONARIO EA</title>
 </head>
 
 <body>
+	
+	<header id="main-header">
+	<hr>
+		<div align="center">
+		<label>1.- MAS,  2.-MENOS</label><br> 
+		</div>
+		<hr>
+	<p style="color: ghostwhite">Bienvenido <?php echo $_SESSION['username']; ?>!</p>
+	</header>
+	<br><br><br><br><br>
 	<div align=center>
-	<form name="cuestionario4" action="index.php" method="post">
-		<hr><label>1.- MAS,  2.-MENOS</label><br> <hr>
+	<form name="cuestionario4" action="menu.php" method="post">
+		
 		
 		
 		<label> 1. Tengo fama de decir lo que pienso claramente y sin rodeos</label>	

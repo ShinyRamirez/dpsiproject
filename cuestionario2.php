@@ -33,15 +33,34 @@ include("auth.php");
 		color:#FFFFFF; border: 1px solid #eee; border-radius: 20px; box-shadow: 5px 5px 5px #eee; text-shadow:none;
 		
 	}
+		#main-header {
+	background: #333;
+	color: white;
+	height: 90px;
+ 
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+		}
 	</style>
 <meta charset="UTF-8">
 <title>Cuestionario AM</title>
 </head>
 
 <body> 
+	<header id="main-header">
+	<hr>
+		<div align="center">
+		<label>1.- NUNCA,  2.-POCAS VECES,  3.-FRECUENTEMENTE,  4.-MUCHAS VECES,  5.- SIEMPRE.</label><br> 
+		</div>
+		<hr>
+	<p style="color: ghostwhite">Bienvenido <?php echo $_SESSION['username']; ?>!</p>
+	</header>
+	<br><br><br><br><br>
 	<div align=center>
-	<form name="cuestionario2" action="cuestionario4.php" method="post">
-		<hr><label>1.- NUNCA,  2.-POCAS VECES,  3.-FRECUENTEMENTE,  4.-MUCHAS VECES,  5.- SIEMPRE.</label><br> <hr>
+	<form name="cuestionario2" action="menu.php" method="post">
+		
 		<label> 01. Cuando tengo que prestar atención, me doy cuenta de que estoy concentrado y de lo que
 estoy haciendo para mantenerme de esa forma<label>	
 
