@@ -69,18 +69,18 @@ input[type=password]:focus {border-color:#333; }
 	<div align="right">
 	<input type="button" onclick="location.href='/login/index.php'" value="Menu"/>
 	</div>
-	<form name="Registro De Usuarios" action="index.php" method="post">
+	<form name="Registro De Usuarios" action="registro.php" method="post">
 	<Div align="center"> 
 	
 	<label> Ingrese su nombre:</label>
-		<input type="text" />
+		<input type="text"/>
 	<label>Ingrese sus apellidos:</label>
 		<input type="text" /><br><br>
 		
 	<label> Ingrese su correo:</label>
-		<input type="email" />
+		<input type="text" name="user"/>
 	<label>Ingrese su contraseña:</label>
-		<input type="password" /><br><br>
+		<input type="password" name="password"/><br><br>
 		
 	<label>Edad:</label>
 		<input type="number" min="0" max="100">

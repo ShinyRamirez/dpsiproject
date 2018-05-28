@@ -36,7 +36,7 @@
 
 <body>
 	<div align=center>
-	<form name="cuestionario4" action="registro.php" method="post">
+	<form name="cuestionario4" action="index.php" method="post">
 		<hr><label>1.- MAS,  2.-MENOS</label><br> <hr>
 		
 		

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -184,12 +185,12 @@ body {
 <div align="right"> <input type="button" onclick="location.href='/login/registrousr.php' "value="Registrarse" /></div>
 <div align=center> <h2 style="color: turquoise">OROBUX LOGIN</h2><br>
 
-<form name="login" action="usuario.php" method="get"> 
+<form name="login" action="usuario.php" method="post"> 
 	
 	<label>Nombre de usuario</label><br>
-	<input type="text" style="width:215px; height:25px " name="user"/><br><br>
+	<input type="text" style="width:215px; height:25px " name="username" placeholder="Usuario"/><br><br>
 	<label>Contraseña</label><br>
-	<input type="password" style="width:215px; height:25px" name="password"/><br>
+	<input type="password" style="width:215px; height:25px" name="password" placeholder="Contraseña"/><br>
 	
 	<br><input type="submit" value="Login" /> 
 	
