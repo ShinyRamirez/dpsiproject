@@ -1,3 +1,7 @@
+<?php
+require("conexion.php");
+include("auth.php");
+?>
 <!doctype html>
 <html>
 <head>

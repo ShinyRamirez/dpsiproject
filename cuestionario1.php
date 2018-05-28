@@ -1,3 +1,7 @@
+<?php
+require("conexion.php");
+include("auth.php");
+?>
 <!doctype html>
 <html>
 <head>
@@ -57,7 +61,7 @@
 
 <body>
 	<div align=center>
-	  <form name="cuestionario1" action="cuestionario2.php" method="post">
+	  <form name="cuestionario1" action="cuestionario3.php" method="post">
   		<hr><label>1.- NUNCA,  2.-POCAS VECES,  3.-FRECUENTEMENTE,  4.-MUCHAS VECES,  5.- SIEMPRE.</label><br> <hr>
   		<label> 01. Durante el aprendizaje: generalmente me pregunto periódicamente ¿si estoy alcanzando mis metas?</label>	<br>
 			<input type="radio" name="Aq1" value="1"> 1

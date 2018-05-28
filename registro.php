@@ -10,7 +10,7 @@ if (!$connect) {
 
 $bd_select = mysqli_select_db($connect, 'login');
 
-mysqli_query ($connect, "INSERT INTO `login`.`usuarios` (`usuario`, `contrasena`) VALUES ('$_POST[user]','$_POST[password]') ");
+mysqli_query ($connect, "INSERT INTO `login`.`usuarios` (`nombre`, `apellido`,`correo`, `contrasena`,`edad`, `pais`, `telefono`) VALUES ('$_POST[nombre]','$_POST[apellido]','$_POST[user]','$_POST[password]','$_POST[edad]','$_POST[pais]','$_POST[telefono]')");
 
 
  header('Location: index.php');

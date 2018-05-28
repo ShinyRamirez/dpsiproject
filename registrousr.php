@@ -16,7 +16,10 @@
     width: 100%;
 		}
 		body {
-			background-color: #ffe6cc;}
+    
+	background-image: url(img/gradientglow.jpg);
+    
+}
 	input[type=number] {padding:5px; border:2px solid #ccc; 
 -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -69,25 +72,35 @@ input[type=password]:focus {border-color:#333; }
 	<div align="right">
 	<input type="button" onclick="location.href='/login/index.php'" value="Menu"/>
 	</div>
-	<form name="Registro De Usuarios" action="registro.php" method="post">
-	<Div align="center"> 
 	
-	<label> Ingrese su nombre:</label>
-		<input type="text"/>
-	<label>Ingrese sus apellidos:</label>
-		<input type="text" /><br><br>
+	<form name="Registro De Usuarios" action="registro.php" method="post">
+	<Div align="left"> 
+	
 		
-	<label> Ingrese su correo:</label>
-		<input type="text" name="user"/>
-	<label>Ingrese su contraseña:</label>
+	<label> Ingrese su nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="text" align="right" name="nombre"/><br><br>
+	<label>Ingrese sus apellidos:&nbsp;&nbsp;</label>
+		<input type="text" align="right" name="apellido"/><br><br>
+		
+		
+	<label> Ingrese su correo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="text" name="user"/><br><br>
+	<label>Ingrese su contraseña: </label>
 		<input type="password" name="password"/><br><br>
 		
-	<label>Edad:</label>
-		<input type="number" min="0" max="100">
+	<label>Edad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="number" min="0" max="100" name="edad"><br><br>
+
 		
+	<label> Ingrese su pais:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="text" name="pais"/><br><br>
+	<label> Ingrese su telefono:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="text" name="telefono"/><br><br>
+		</Div>	
 		
 		<br><br><input type="submit" value="Enviar" />
-	</Div>
+	
 		</form>
+		
 </body>
 </html>

@@ -1,3 +1,7 @@
+<?php
+require("conexion.php");
+include("auth.php");
+?>
 <!doctype html>
 <html>
 <head>
@@ -36,7 +40,7 @@
 
 <body> 
 	<div align=center>
-	<form name="cuestionario2" action="cuestionario3.php" method="post">
+	<form name="cuestionario2" action="cuestionario4.php" method="post">
 		<hr><label>1.- NUNCA,  2.-POCAS VECES,  3.-FRECUENTEMENTE,  4.-MUCHAS VECES,  5.- SIEMPRE.</label><br> <hr>
 		<label> 01. Cuando tengo que prestar atención, me doy cuenta de que estoy concentrado y de lo que
 estoy haciendo para mantenerme de esa forma<label>	

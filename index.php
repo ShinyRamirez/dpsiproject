@@ -182,7 +182,9 @@ body {
 </head>
 <body>
 	
-<div align="right"> <input type="button" onclick="location.href='/login/registrousr.php' "value="Registrarse" /></div>
+<div align="right"> 
+	<input type="button" onClick="location.href='/login/menu.php'" value="Menu"/>
+	<input type="button" onclick="location.href='/login/registrousr.php' "value="Registrarse" /></div>
 <div align=center> <h2 style="color: turquoise">OROBUX LOGIN</h2><br>
 
 <form name="login" action="usuario.php" method="post"> 

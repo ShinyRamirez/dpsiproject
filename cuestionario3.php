@@ -1,3 +1,7 @@
+<?php
+require("conexion.php");
+include("auth.php");
+?>
 <!doctype html>
 <html>
 <head>
@@ -36,7 +40,7 @@
 
 <body>
 	<div align=center>
-	<form name="cuestionario3" action="cuestionario4.php" method="post">
+	<form name="cuestionario3" action="cuestionario2.php" method="post">
 		<hr><label>Marque la letra que considere representa la actividad que prefiere.</label><br>
 		<label> Marque solo una letra por pregunta en la columna.</label><br>
 Lo importante es que seas muy sincero contigo mismo en las respuestas</label><br> <hr>
