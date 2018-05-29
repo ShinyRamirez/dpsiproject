@@ -46,6 +46,16 @@ include("auth.php");
 		}
 	</style>
 <title>CUESTIONARIO SR</title>
+	
+	<script type="text/javascript">
+$(document).ready(function() {
+    $("form").keypress(function(e) {
+        if (e.which == 13) {
+            return false;
+        }
+    });
+});
+</script>
 </head>
 
 <body>
@@ -75,7 +85,7 @@ Lo importante es que seas muy sincero contigo mismo en las respuestas</label><br
   			<td>B Hay música, temas de que platicar o silencio </td>	<td><input type="radio" name="Cq1" value="2"></td>
 				</tr>
 			<tr>	
-  			<td>C Hay suficiente espacio para moverse </td>			<td><input type="radio" name="CCq1" value="3"></td>
+  			<td>C Hay suficiente espacio para moverse </td>			<td><input type="radio" name="Cq1" value="3"></td>
 			</tr>	
 			</table>
 			<br>

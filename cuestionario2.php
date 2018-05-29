@@ -46,6 +46,16 @@ include("auth.php");
 	</style>
 <meta charset="UTF-8">
 <title>Cuestionario AM</title>
+	
+	<script type="text/javascript">
+$(document).ready(function() {
+    $("form").keypress(function(e) {
+        if (e.which == 13) {
+            return false;
+        }
+    });
+});
+</script>
 </head>
 
 <body> 

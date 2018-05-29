@@ -46,6 +46,17 @@ include("auth.php");
 		}
 	</style>
 <title>CUESTIONARIO EA</title>
+	
+	<script type="text/javascript">
+$(document).ready(function() {
+    $("form").keypress(function(e) {
+        if (e.which == 13) {
+            return false;
+        }
+    });
+});
+</script>
+	
 </head>
 
 <body>
@@ -1309,7 +1320,7 @@ include("auth.php");
 			<br>
 
 			
-<input type="radio" name="q80" value="1"> MAS            <input type="radio" name="q80" value="2"> MENOS
+<input type="radio" name="q80" value="1"> MAS            <input type="radio" name="q80" value="2"> MENOS<br><br>
 
 
 
