@@ -6,6 +6,7 @@ include("auth.php");
 <html>
 <head>
 <meta charset="UTF-8">
+	<script src="jquery-3.3.1.min.js" type="text/javascript" > </script>
 	<style>
 	body {font-family: Arial, Helvetica, sans-serif;}
 		button {

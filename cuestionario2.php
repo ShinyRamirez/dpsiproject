@@ -45,6 +45,7 @@ include("auth.php");
 		}
 	</style>
 <meta charset="UTF-8">
+	<script src="jquery-3.3.1.min.js" type="text/javascript" > </script>
 <title>Cuestionario AM</title>
 	
 	<script type="text/javascript">
