@@ -1,5 +1,10 @@
 <?php
 
+require("conexion.php");
+include("auth.php");
+
+
+
 $uno=0;
 $dos=0;
 $tres=0;

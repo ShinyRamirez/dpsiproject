@@ -17,18 +17,17 @@ require ("conexion.php");
 
 session_start();
 // If form submitted, insert values into the database.
-
 if (isset($_POST['username'])){
         // removes backslashes
 	$username = ($_POST['username']);
         //escapes special characters in a string
 	$username = mysqli_real_escape_string($connect,$username);
 	$password = ($_POST['password']);
-	//$passwordcoded = md5($password);
+	$passwordcoded = md5($password);
 	//var_dump($passwordcoded);exit;
 	$password = mysqli_real_escape_string($connect,$password);
 	//Checking is user existing in the database or not
-        $query = "SELECT * FROM `usuarios` WHERE correo='$username' and contrasena='$password'";
+        $query = "SELECT * FROM `administrador` WHERE correo='$username' and contrasena='$password'";
 	
 	$result = mysqli_query($connect,$query) or die(mysql_error());
 	
@@ -37,8 +36,8 @@ if (isset($_POST['username'])){
 	//var_dump($rows);exit;
         if($rows==1){
 	    $_SESSION['username'] = $username;
-			// Redirect user to index.php
-	    header("Location: menu.php");
+            // Redirect user to index.php
+	    header("Location: admdashboard.php");
          }else{
 			
 			header("Location: usr404.php");

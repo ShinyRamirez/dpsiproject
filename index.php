@@ -24,6 +24,12 @@ input[type=password]:focus {border-color:#333;}
     border-radius: 5px;
 }
 input[type=text]:focus {border-color:#333; }
+	
+	input[type=email] {padding:5px; border:2px solid #ccc; 
+-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=email]:focus {border-color:#333; }
 
 input[type=submit] {padding:5px 10px; background:#b9dfff; color: #FFFFFF; border:1px solid #eeeeee;
 	 box-shadow: 5px 5px 5px #eee; text-shadow: none;
@@ -183,6 +189,7 @@ body {
 <body>
 	
 <div align="right"> 
+	<input type="button" onClick="location.href='/login/admin.php'" value="Admin" />
 	<input type="button" onClick="location.href='/login/menu.php'" value="Menu"/>
 	<input type="button" onclick="location.href='/login/registrousr.php' "value="Registrarse" />
 	</div>
@@ -191,9 +198,9 @@ body {
 <form name="login" action="usuario.php" method="post"> 
 	
 	<label>Nombre de usuario</label><br>
-	<input type="text" style="width:215px; height:25px " name="username" placeholder="Usuario"/><br><br>
+	<input type="email" style="width:215px; height:25px " name="username" placeholder="Usuario" required /><br><br><br>
 	<label>Contraseña</label><br>
-	<input type="password" style="width:215px; height:25px" name="password" placeholder="Contraseña"/><br>
+	<input type="password" style="width:230px; height:35px" name="password" placeholder="Contraseña" required/><br>
 	
 	<br><input type="submit" value="Login" /> 
 	

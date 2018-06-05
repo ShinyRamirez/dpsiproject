@@ -70,7 +70,7 @@ input[type=password]:focus {border-color:#333; }
 	
 <body>
 	<div align="right">
-	<input type="button" onclick="location.href='/login/index.php'" value="Menu"/>
+	<input type="button" onclick="location.href='/login/index.php'" value="Inicio"/>
 	</div>
 	
 	<form name="Registro De Usuarios" action="registro.php" method="post">
@@ -80,22 +80,22 @@ input[type=password]:focus {border-color:#333; }
 	<label> Ingrese su nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 		<input type="text" align="right" name="nombre"/><br><br>
 	<label>Ingrese sus apellidos:&nbsp;&nbsp;</label>
-		<input type="text" align="right" name="apellido"/><br><br>
+		<input type="text" align="right" name="apellido" required/><br><br>
 		
 		
 	<label> Ingrese su correo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-		<input type="text" name="user"/><br><br>
+		<input type="email" name="user" required/><br><br>
 	<label>Ingrese su contraseña: </label>
-		<input type="password" name="password"/><br><br>
+		<input type="password" name="password" required/><br><br>
 		
 	<label>Edad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-		<input type="number" min="0" max="100" name="edad"><br><br>
+		<input type="number" min="0" max="100" name="edad" required><br><br>
 
 		
 	<label> Ingrese su pais:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-		<input type="text" name="pais"/><br><br>
+		<input type="text" name="pais" required/><br><br>
 	<label> Ingrese su telefono:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-		<input type="text" name="telefono"/><br><br>
+		<input type="text" name="telefono"required/><br><br>
 		</Div>	
 		
 		<br><br><input type="submit" value="Enviar" />
